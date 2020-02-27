@@ -1,0 +1,15 @@
+Installation 
+  Provide instructions and code (~2 sentences)
+
+Functions
+  Quick Overview of the 3 main functions spacey provides (1-2 sentences each) (automap, get_heightmap, get_image_overlay)
+  Quick overview of the other helper functions (1 sent each) (get_centroid_bounding_box, get_coord_bounding_box, get_centroid, load_heightmap, load_overlay, rad_to_deg, deg_to_rad)
+  Mike's github has a thorough overview of these functions, could use that
+  Mention that they are usable with magrittr pipe %>%
+
+Usage
+  Quick description
+  Automap
+    Automap is well documented by Mike already
+    Hard to read though - Break up his work into sections with appropriate headers
+  

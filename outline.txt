@@ -12,4 +12,7 @@ Usage
   Automap
     Automap is well documented by Mike already
     Hard to read though - Break up his work into sections with appropriate headers
-  
+    Provide more examples if we see fit
+  Heightmap and Overlay (This is the section that we could probably improve the most!)
+    Provide more examples and images
+    Emphasize the flow of creating a bounding box, feeding to to these functions to produce a matrix, and then using rayshader to map the matrix

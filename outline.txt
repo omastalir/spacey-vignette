@@ -1,9 +1,23 @@
 Installation 
   Provide instructions and code (~2 sentences)
+    Installing the Spacey package requires one to download via: install.packages("devtools")
+    devtools::install_github("mikemahoney218/spacey") since Spacey is not yet approved for the CRAN directory.  
 
 Functions
   Quick Overview of the 3 main functions spacey provides (1-2 sentences each) (automap, get_heightmap, get_image_overlay)
-  Quick overview of the other helper functions (1 sent each) (get_centroid_bounding_box, get_coord_bounding_box, get_centroid, load_heightmap, load_overlay, rad_to_deg, deg_to_rad)
+    automap: https://mikemahoney218.github.io/spacey/articles/automap-walkthrough.html. Inputs: can be just a coordinate pair     as latitude, longitude, but has many options (e.g. map overlays (filters), saving file options and zoom). There is also       the possibility to 3d render the image generated, but this is option is admitidly not fully developed. 
+    get_heightmap: Retrieves an elevation map from the USGS (database of heights for US). This raster is then translated into     an R matrix. 
+    get_image_overlay: Using ESRI's filters, applies a layer onto a map generated with automap. 
+  Quick overview of the other helper functions (1 sent each) (get_centroid_bounding_box, get_coord_bounding_box, get_centroid,   load_heightmap, load_overlay, rad_to_deg, deg_to_rad)
+    get_centroid: finds the central location given matched longitutde and latitude vectors. 
+    get_centroid_bounding_box: allows a box of varying size to be created given a central point. 
+    get_coord_bounding_box: creates a rectangle with the least area given a set of list of lat/long coordinates. 
+    load_heightmap: imports .tif files from local client to be used for height mapping on images. 
+    load_overlay: layer for maps that loads into environment themes from ESRI (limited). 
+    rad_to_deg: converts radians to degrees for visualizing map. 
+    deg_to_read: converts degrees to radians for visualizing map. 
+    All functions are able to run with the magrittr pipe (%>%) which serves the same function as the tidyverse pipe. 
+    
   Mike's github has a thorough overview of these functions, could use that
   Mention that they are usable with magrittr pipe %>%
 
